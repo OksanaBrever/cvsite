@@ -2,8 +2,236 @@
 <html>
     <head>
         <title> </title>
+         <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+        
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/animation.css" type="text/css" />
+        <link rel="stylesheet" href="css/index.css" type="text/css" />
     </head>
-    <body>
-        <p>Hi everyone</p>
+    <body data-spy="scroll" data-target=".navbar">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                    
+                </button>                    
+                <nav class="collapse navbar-collapse" id="responsive-menu">
+                <ul class="nav navbar-nav pull-right">
+                     <li><a class="page-scroll" href="#first">HOME</a></li>
+                     <li><a class="page-scroll" href="#second">ABOUT ME</a></li>
+                     <li><a class="page-scroll" href="#forth">SKILLS</a></li>
+                     <li><a class="page-scroll" href="#fifth">CONTACT</a></li>
+               </ul>
+            </nav>
+            </div>
+        </nav>
+        <section id ="first">
+            <video autoplay loop id="bgvid">
+                <source src="video/smokebg.mp4" type="video/mp4">
+            </video>
+            <div id="oksana">
+                <h1>OKSANA BREVER</h1>
+                <p>Hi&Welcome to my first progect....</p>
+                <p>Here I should write couple words about me...so let's start. My name is Oksana Brever, a future <em>DESIGNER&DEVELOPER</em>.</p>
+            </div>
+        </section>
+        
+        <section id="second">
+           <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item"></div>
+                    <div class="item"></div>
+                    <div class="item"></div>
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </section>
+        
+        <section id="third">
+            <div class="container">
+            <ul class="timeline">
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel animated slideInRight">
+                        <div class="timeline-heading">
+                        <h1 class="timeline-title">About me</h1>
+                        </div>
+                    <div class="timeline-body">
+                        <a href="#demo" data-toggle="collapse">
+                        <img src="img/mypic1.jpg" class="img-circle person" alt="developer foto">
+                        </a>
+                        <div id="demo" class="collapse">
+                            <p>Hi&Welcome to my first progect....</p>
+                            <p>My name is <em>Oksana Brever</em> amd I'm future designer and developer. I've made this website to show you what I've learned on this course.</p>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel animated slideInLeft">
+                    <div class="timeline-heading">
+                        <h1 class="timeline-title">Education</h1>
+                    </div>
+                    <div class="timeline-body">
+                        <h3>National University "Lviv Polytechnic"</h3>
+                        <p>2008-2013</p>
+                        <p>NU"LP", Department of Energy and control systems. I've got an engineering education. During my studies I was interested in programming controllers and modeling of control systems.</p>
+                        <br>
+                        <h3>Art school "Bilabarva"</h3>
+                        <p>2014-2016</p>
+                        <p>I have a sense composition, maybe you won't see it here...but i have it)))</p>
+                        <br>
+                        <h3>SoftServe IT Academy</h3>
+                        <p>04 - 05. 2016</p>
+                        <p>I learned HTML5/ CSS3/ JavaScript Fundamentals course</p>
+                        <br>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                    <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+                    <div class="timeline-panel animated slideInRight">
+                        <div class="timeline-heading">
+                        <h1 class="timeline-title">Work experience</h1>
+                        </div>
+                    <div class="timeline-body">
+                        <h3>foodpanda, e-commerce project of Rocket Internet (DE)</h3>
+                        <p>07.2013 - 06.2015</p>
+                        <p>Started work in the company as a simple worker, but after several months promoted to Team Leader. I developed a personal training system, worked with partners of the company.</p>
+                        <br>
+                    </div>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </section>
+        
+        <section id="forth">
+            <div id="skills">
+            <div class="container">
+                <h1 class="text-center">Skills</h1>
+                <div class="row">
+                    <div class="col-md-2 col-lg-2"></div>
+                    <div class="col-md-8 col-lg-8">
+                        <div class="barWrapper">
+                            <span class="progressText"><B>HTML5</B></span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" >   
+                                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="45%"> </span>     
+                                </div>
+                            </div>
+                        <div class="barWrapper">
+                            <span class="progressText"><B>CSS3</B></span>
+                            <div class="progress ">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="10" aria-valuemax="100" style="">
+                                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="50%"> </span>  
+                                </div>
+              
+                            </div>
+                        </div>
+                        <div class="barWrapper">
+                            <span class="progressText"><B>BOOTSTRAP</B></span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="70%"> </span>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="barWrapper">
+                            <span class="progressText"><B>JQUERY</B></span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+                                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="55%"> </span>  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="barWrapper">
+                        <span class="progressText"><B>JAVA</B></span>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100">
+                                    <span  class="popOver" data-toggle="tooltip" data-placement="top" title="12%"> </span>  
+                                  </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2"></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <section id="fifth">
+            <div class="container">
+              <h2 class="text-center">Contact</h2>
+              <p class="text-center"><em>Ask me anything and I'll answer truthfully</em></p>
+              <div class="row test">
+                <div class="col-md-4">
+                  <p><span class="glyphicon glyphicon-map-marker"></span>Lviv, UA</p>
+                  <p><span class="glyphicon glyphicon-phone"></span>Phone: +38 0636328750</p>
+                  <p><span class="glyphicon glyphicon-envelope"></span>Email: pachkovskaoksana@gmail.com</p> 
+                </div>
+                <form method="POST" action="https://formspree.io/pachkovskaoksana@gmail.com">
+                <div class="col-md-8">
+                  <div class="row">
+                    <div class="col-sm-6 form-group">
+                      <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                      <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                  </div>
+                  <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5" required></textarea>
+                  <br>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <button class="btn pull-right" type="submit">Send</button><br>
+                    </div>
+                    <div id="post_form_success"></div>
+                  </div> 
+                </div>
+                </form>
+                
+              </div>
+            </div>
+            
+            
+
+
+        </section>
+        
+        <footer class="text-center">
+            <a class="up-arrow" href="#first">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+            </a><br><br>
+            <p><em>Thanks for watching</em></p> 
+            <p><em>+1 to your karma</em></p>
+        </footer>
+        
+        
+        
+         <script src="//code.jquery.com/jquery-2.2.2.min.js"   
+            integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI="  
+            crossorigin="anonymous">
+        </script>        
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+            crossorigin="anonymous">
+        </script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/index.js"></script>
+       
     </body>
 </html>
